@@ -1,6 +1,5 @@
 import React from "react";
 import { AppBar, Toolbar, Box, Typography, styled } from "@mui/material";
-import { ParallaxProvider } from "react-scroll-parallax";
 import dot2 from "../../../assets/dot2.webp";
 import solana from "../../../assets/solana.webp";
 import btc from "../../../assets/btc.webp";
@@ -13,13 +12,15 @@ const Component = styled(Box)`
   margin-top: 110px;
   color: white;
   position: relative;
-  top: 210px;
-  left: 480px;
+  top: 150px;
+  left:450px;
+  display: inline-block;
+
+
 `;
 const Components = styled(Box)`
   position: relative;
   top: 630px;
-  left: 90px;
 `;
 
 const Images = styled(Box)`
@@ -105,7 +106,6 @@ const About = () => {
         <LargeText>We are building you a home</LargeText>
         <SmallText>in the world of crypto</SmallText>
       </Component>
-
       <Components>
         <LargeText>Our Partners</LargeText>
         <Small>
@@ -123,7 +123,6 @@ const About = () => {
           position: "relative",
           top: "250px",
           left: "1150px",
-        
         }}
       />
       <img
@@ -146,7 +145,6 @@ const About = () => {
           position: "relative",
           top: "190px",
           left: "1200px",
-         
         }}
       />
       <img
